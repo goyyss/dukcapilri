@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumen Data</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('image.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            width: 150px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.95);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .output {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .output h3 {
+            font-size: 14px;
+            color: #666;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .output div {
+            padding: 8px 0;
+            font-size: 12px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .output div:last-child {
+            border-bottom: none;
+        }
+
+        .output div span.label {
+            font-weight: bold;
+            color: #333;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .output div span.value {
+            color: #333;
+            display: block;
+            font-size: 14px;
+        }
+
+        .output .status {
+            color: #28a745;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px 10px;
+            background-color: #e8f5e9;
+            border-radius: 4px;
+            display: inline-block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo Perusahaan" class="logo">
+    </div>
+    
+    <div class="container">
+        <h2>Informasi Dokumen</h2>
+        <div id="documentData" class="output">
+            <!-- Konten data akan diisi oleh JavaScript -->
+            <div>
+                <span class="label">Nomor Dokumen</span>
+                <span class="value">DOC123456789</span>
+            </div>
+            <div>
+                <span class="label">Tanggal</span>
+                <span class="value">10 November 2024</span>
+            </div>
+            <div>
+                <span class="label">Status</span>
+                <span class="status">Aktif</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
